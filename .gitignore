@@ -48,8 +48,8 @@ tests/lib/
 
 platforms/
 apps/lib/
-apps/hooks/
-apps/node_modules/
+hooks/
+node_modules/
 
 package-lock.json
 
