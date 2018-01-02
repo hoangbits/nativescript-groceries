@@ -1,11 +1,14 @@
+import { AppComponent } from './app.component';
 import { NgModule } from "@angular/core";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
-import { AppComponent } from "./app.component";
+import { NativeScriptHttpModule } from "nativescript-angular/http";
+
 
 @NgModule({
   imports: [NativeScriptModule,
-    NativeScriptFormsModule],
+    NativeScriptFormsModule,
+    NativeScriptHttpModule],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
 })
