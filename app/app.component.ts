@@ -18,8 +18,7 @@ export class AppComponent {
   }
 
   submit() {
-    console.log("submit");
-    if (!this.isLoggingIn) {
+    if (this.isLoggingIn) {
       this.login();
     } else {
       this.signUp();
@@ -31,14 +30,13 @@ export class AppComponent {
   }
 
   signUp() {
-    console.log("signUp");
     this.userService.register(this.user).subscribe(() => {
       alert("Your account was successfully created!");
-      this.toggleDisplay;
+      this.toggleDipslay();
     }, () => alert("Unfortunately we were unable to create your account!"));
   }
 
-  toggleDisplay() {
+  toggleDipslay() {
     this.isLoggingIn = !this.isLoggingIn;
   }
 
